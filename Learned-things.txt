@@ -1,0 +1,122 @@
+package main
+
+import (
+	"fmt"
+	// "strings"
+	// "example.com/go-project/greetings"
+	// "example.com/go-project/utils"
+)
+
+// type Person struct {
+// 	Name string
+// 	Age  int
+// }
+
+// type Product struct {
+// 	Name  string
+// 	Price float64
+// }
+
+func main() {
+
+	// //Linked List ArrayList, Hashmap, mapping
+	// fmt.Print("Array List :- \n")
+	// var people []Person
+	// var products []Product
+
+	// people = append(people, Person{"Alice", 25}, Person{"Bob", 30}, Person{"Charlie", 22}, Person{"David", 35}, Person{"Alice", 25})
+	// products = append(products, Product{"Laptop", 999.99}, Product{"Phone", 599.99}, Product{"Tablet", 299.99})
+
+	// fmt.Println("Initial People List :- ", people)
+	// fmt.Println("Initial Products List :- ", products)
+
+	// fmt.Println("\n--- Performing Operations ---")
+
+	// //Finding user by name
+	// nameToFind := "Alice"
+	// person := findPersonByName(people, nameToFind)
+	// if person != nil {
+	// 	fmt.Printf("Person Found: %s, Age: %d\n", person.Name, person.Age)
+	// } else {
+	// 	fmt.Printf("Person with name %s not found!\n", nameToFind)
+	// }
+
+	// //Finding product by range of price
+	// const minPrice = 500
+	// const maxPrice = 1000
+	// foundProducts := productsInPriceRange(minPrice, maxPrice, products)
+	// if len(foundProducts) > 0 {
+	// 	fmt.Println("Products found within the price range:")
+	// 	for _, product := range foundProducts {
+	// 		fmt.Println("Name:-",product.Name, "Price:", product.Price)
+	// 	}
+	// } else {
+	// 	fmt.Println("No products found within the price range.")
+	// }
+	
+
+
+//Collections Not directly but it has some other things that can be manage by these method and structure
+// 	// Declaring a slice of integers
+//     var mySlice []string
+//     // Appending elements to the slice
+//     mySlice = append(mySlice, "10", "20", "30", "40")
+//     // Accessing elements
+//     fmt.Println("Slice:", mySlice)
+//     // Modifying an element
+//     mySlice[1] = "25"
+//     fmt.Println("Modified Slice:", mySlice)
+//     // Removing an element by index (e.g., index 2)
+//     mySlice = append(mySlice[:2], mySlice[3:]...)
+//     fmt.Println("After Removal:", mySlice)
+
+// Declaring a map where the key is a string and the value is an integer
+    // myMap := make(map[string]string)
+
+    // // Adding key-value pairs
+    // myMap["Alice"] = "10"
+	// myMap["Bob"] = "20"
+	// myMap["Charlie"] = "30"
+	// myMap["David"] = "40"
+	// // Accessing a value by key
+	// fmt.Println("Value for Alice:", myMap["Charlie"])
+	// // Modifying a value
+	// myMap["Charlie"] = "20"
+	// fmt.Println("Updated Value for Alice:", myMap["Charlie"])
+	// // Removing a key-value pair
+	// delete(myMap, "Bob")
+	// fmt.Println("After Deletion:", myMap)
+
+    // // Accessing values
+    // fmt.Println("Alice's age:", myMap["Alice"])
+
+    // // Deleting a key
+    // delete(myMap, "Alice")
+
+    // // Checking if a key exists
+    // age, exists := myMap["Bob1"]
+    // if exists {
+    //     fmt.Println("Bob's age:", age)
+    // }
+
+}
+
+// // Find a person by name
+// func findPersonByName(people []Person, name string) *Person {
+// 	for _, person := range people {
+// 		if strings.EqualFold(person.Name, name) {
+// 			return &person
+// 		}
+// 	}
+// 	return nil
+// }
+
+// func productsInPriceRange(minPrice float64, maxPrice float64, products []Product) []Product {
+// 	var productsToReturn []Product 
+// 	for _, product := range products {
+// 		if product.Price >= minPrice && product.Price <= maxPrice {
+// 			productsToReturn = append(productsToReturn, product)
+// 		}
+// 	}
+// 	return productsToReturn
+// }
